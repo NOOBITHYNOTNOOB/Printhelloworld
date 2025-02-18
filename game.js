@@ -17,7 +17,7 @@ init();
 animate();
 
 function init() {
-  camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 1, 1000);
+  camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 1000);
   scene = new THREE.Scene();
   scene.background = new THREE.Color(0xcccccc);
   scene.fog = new THREE.Fog(0xffffff, 0, 750);
@@ -29,7 +29,7 @@ function init() {
   controls = new PointerLockControls(camera, document.body);
   scene.add(controls.getObject());
 
-  const onKeyDown = function(event) {
+  const onKeyDown = function (event) {
     switch (event.code) {
       case 'ArrowUp':
       case 'KeyW':
@@ -54,7 +54,7 @@ function init() {
     }
   };
 
-  const onKeyUp = function(event) {
+  const onKeyUp = function (event) {
     switch (event.code) {
       case 'ArrowUp':
       case 'KeyW':
