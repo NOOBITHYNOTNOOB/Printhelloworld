@@ -1,1 +1,3 @@
 # Printhelloworld
+print "Hello world"
+
